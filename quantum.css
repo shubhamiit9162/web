@@ -1,0 +1,241 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+#nav {
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    flex-direction: column;
+}
+
+#nav::before {
+    content: "";
+    background-color: blue;
+    position: sticky;
+    opacity: 0.2;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    top: 0px;
+    left: 0px;
+}
+
+#logo {
+    margin: 5px 10px;
+}
+
+#logo img {
+    height: 60px;
+    margin: 2px 15px;
+}
+
+#nav ul {
+    display: flex;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, cursive;
+}
+
+#nav ul li {
+    list-style: none;
+    font-size: medium;
+}
+
+#nav ul li a {
+    padding: 2px;
+    margin: 5px;
+    background-color: aqua;
+    color: black;
+    display: block;
+    padding: 5px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+}
+
+#nav ul li a:hover {
+    color: white;
+    background-color: black;
+}
+
+#HOME{
+    display: flex;
+    flex-direction: column;
+    height: 280px;
+    padding: 3px 60px;
+    align-items: center;
+    justify-content: center;
+}
+
+#HOME::before{
+    content: "";
+    position: absolute;
+    background:url(images/SQCC-logos_transparent.png) no-repeate center center/cover;
+height: 100%;
+width: 100%;
+top:0px;
+left: 0px;
+z-index: -1;
+opacity:0.89;
+height: 480px;
+}
+
+#HOME h1{
+    color: rgb(239, 239, 246);
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    border: 5px solid black;
+    background-color: aqua;
+    border-radius: 60px;
+    padding: 10px;
+    margin: 25px;
+}
+#HOME p{
+    color: rgba(236, 248, 242, 0.763);
+    text-align: center;
+    background-color: rgb(33, 179, 184);
+    border-radius: 45px;
+    font-size: 1.5rem;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 13px;
+}
+
+#ABOUT_US{
+    display: flex;
+    flex-direction: column;
+    height: 280px;
+    padding: 3px 60px;
+    align-items: center;
+    justify-content: center;
+}
+
+#ABOUT_US::before{
+    content: "";
+    position: absolute;
+    background:url(images/SQCC-logos_transparent.png) no-repeate center center/cover;
+height: 100%;
+width: 100%;
+top:0px;
+left: 0px;
+z-index: -1;
+opacity:0.89;
+height: 480px;
+}
+
+#ABOUT_US h1{
+    color: rgb(239, 239, 246);
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    border: 5px solid black;
+    background-color: aqua;
+    border-radius: 60px;
+    padding: 10px;
+    margin: 25px;
+}
+#ABOUT_US p{
+    color: rgba(228, 241, 234, 0.763);
+    background-color: black;
+    border-radius: 45px;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 13px;
+}
+#DOMAIN{
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+}
+#PROJECTS{
+    margin: 10px;
+        display: flex;
+    flex-direction: column;
+}
+
+#DOMAIN .box{
+    border: 5px solid rgb(52, 170, 93);
+    padding: 15px;
+    margin: 15px 15px;
+    border-radius: 20px;
+    background-color: aqua;
+    color: white;
+}
+#PROJECTS .box{
+    border: 5px solid rgb(52, 170, 93);
+    padding: 15px;
+    margin: 15px 15px;
+    border-radius: 20px;
+    background-color: aqua;
+    color: white;
+}
+#DOMAINS .box p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#PROJRCTS .box p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.first{
+    font-size: 1.8rem;
+    padding: 20px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.second{
+    font-size: 2rem;
+    padding: 12px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.center{
+    text-align: center;
+}
+#CONTACT_US{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: -1;
+}
+
+
+#DOMAINS h2{
+    color: rgb(239, 239, 246);
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    border: 5px solid rgba(45, 22, 172, 0.549);
+    background-color: aqua;
+    border-radius: 60px;
+    padding: 10px;
+    margin: 25px;
+}
+#DOMAINS p{
+    color: rgba(10, 11, 11, 0.981);
+    background-color: rgba(251, 251, 255, 0.495);
+    border-radius: 45px;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 13px;
+}
+
+#PROJECTS h2{
+    color: rgb(239, 239, 246);
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    border: 5px solid rgba(30, 66, 174, 0.281);
+    background-color: aqua;
+    border-radius: 60px;
+    padding: 10px;
+    margin: 25px;
+}
+#PROJECTS p{
+    color: rgba(11, 11, 12, 0.985);
+    background-color: white;
+    border-radius: 45px;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 13px;
+}
